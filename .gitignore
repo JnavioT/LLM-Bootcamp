@@ -24,6 +24,7 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.json
 MANIFEST
 
 # PyInstaller
@@ -139,6 +140,8 @@ venv.bak/
 
 # mkdocs documentation
 /site
+
+/ollama_files
 
 # mypy
 .mypy_cache/
