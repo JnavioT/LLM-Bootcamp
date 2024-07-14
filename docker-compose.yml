@@ -8,6 +8,11 @@ services:
       - "11434:11434"
     volumes:
       - ./ollama_files:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.4.3
